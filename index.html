@@ -8,17 +8,13 @@
   <title>مواقيت الصلاة والإضافات الإسلامية</title>
   <meta name="description" content="عرض مواقيت الصلاة، الأذكار، الأدعية، واتجاه القبلة، مع التاريخ الميلادي والهجري.">
   <meta name="keywords" content="أوقات الصلاة, أذكار, أدعية, القبلة, تاريخ هجري, تاريخ ميلادي">
-  
-  <!-- Open Graph for Discord/Facebook preview -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://sa0hm0.github.io/s/">
-  <meta property="og:title"       content="مواقيت الصلاة والإضافات الإسلامية">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sa0hm0.github.io/h/">
+  <meta property="og:title" content="مواقيت الصلاة والإضافات الإسلامية">
   <meta property="og:description" content="عرض مواقيت الصلاة، الأذكار، الأدعية، واتجاه القبلة، مع التاريخ الميلادي والهجري.">
-  <meta property="og:image"       content="https://sdmntprwestus.oaiusercontent.com/files/00000000-cc44-6230-8a55-47ada2f6810f/raw?se=2025-06-20T09%3A02%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=a926da2d-72db-5aaf-aa84-2066d303b0f9&skoid=1e6af1bf-6b08-4a04-8919-15773e7e7024&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-20T06%3A26%3A39Z&ske=2025-06-21T06%3A26%3A39Z&sks=b&skv=2024-08-04&sig=1XqZTeaFlhl2S%2BA11aGTJ4n8%2FejQ6s7GdkfZgn9boUY%3D">
+  <meta property="og:image" content="https://sdmntprwestus.oaiusercontent.com/files/00000000-cc44-6230-8a55-47ada2f6810f/raw">
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon / Site Logo -->
-  <link rel="icon" href="https://sdmntprwestus.oaiusercontent.com/files/00000000-108c-6230-902a-18f5e460c386/raw?se=2025-06-20T08%3A58%3A15Z&sp=r&sv=2024-08-04&sr=b&scid=57cb8cd5-3344-5d5c-80f5-7681420a1f21&skoid=1e6af1bf-6b08-4a04-8919-15773e7e7024&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-20T06%3A17%3A00Z&ske=2025-06-21T06%3A17%3A00Z&sks=b&skv=2024-08-04&sig=pOW38xtyfaIkOVcMlT54dfoClwBKYlB4zCE3VofRw%2Bw%3D" type="image/png">
+  <link rel="icon" href="https://sdmntprwestus.oaiusercontent.com/files/00000000-108c-6230-902a-18f5e460c386/raw" type="image/png">
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,7 +27,7 @@
     }
     header {
       position: relative;
-      background: #0a3d24 url("https://sdmntprwestus.oaiusercontent.com/files/00000000-cc44-6230-8a55-47ada2f6810f/raw?se=2025-06-20T09%3A02%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=a926da2d-72db-5aaf-aa84-2066d303b0f9&skoid=1e6af1bf-6b08-4a04-8919-15773e7e7024&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-20T06%3A26%3A39Z&ske=2025-06-21T06%3A26%3A39Z&sks=b&skv=2024-08-04&sig=1XqZTeaFlhl2S%2BA11aGTJ4n8%2FejQ6s7GdkfZgn9boUY%3D") center/cover no-repeat;
+      background: #0a3d24 url("https://sdmntprwestus.oaiusercontent.com/files/00000000-cc44-6230-8a55-47ada2f6810f/raw") center/cover no-repeat;
       color: #fff;
       padding: 60px 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -56,11 +52,7 @@
       transition: right .3s; padding-top: 60px;
       text-align: right; z-index: 1000;
     }
-    #sideMenu a {
-      display: block; padding: 15px 20px;
-      color: #fff; text-decoration: none;
-      border-bottom: 1px solid #045d38;
-    }
+    #sideMenu a { display: block; padding: 15px 20px; color: #fff; text-decoration: none; border-bottom: 1px solid #045d38; }
     #sideMenu a:hover { background: #045d38; }
 
     .box {
@@ -76,68 +68,44 @@
       display: inline-block; padding-bottom: 5px;
       font-size: 1.2rem;
     }
-    .controls {
-      margin: 15px 0; display: flex;
-      flex-wrap: wrap; justify-content: center; gap: 8px;
-    }
+    .controls { margin: 15px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
     .controls select, .controls input, .controls button {
       flex: 1 1 120px; max-width: 200px;
       padding: 8px; font-size: 0.9rem;
       border: 1px solid #0a3d24; border-radius: 4px; outline: none;
     }
-    .controls button {
-      background: #0a3d24; color: #fff; cursor: pointer;
-    }
+    .controls button { background: #0a3d24; color: #fff; cursor: pointer; }
     .controls button:hover { background: #08301c; }
 
     .times { margin-top: 10px; }
-    .times div {
-      display: flex; justify-content: space-between;
-      margin: 6px 0; font-size: 0.9rem;
-    }
-    #nextCountdown {
-      margin-top: 10px; font-size: 1rem;
-      font-weight: bold; color: #d35400;
-    }
-    .decor-img {
-      width: 100%; border-radius: 6px; margin: 8px 0;
-    }
-    #khatmTable {
-      width: 100%; border-collapse: collapse; margin-top: 10px;
-      font-size: 0.85rem;
-    }
-    #khatmTable th, #khatmTable td {
-      border: 1px solid #ccc; padding: 6px; text-align: center;
-    }
+    .times div { display: flex; justify-content: space-between; margin: 6px 0; font-size: 0.9rem; }
+    #nextCountdown { margin-top: 10px; font-size: 1rem; font-weight: bold; color: #d35400; }
+
+    .decor-img { width: 100%; border-radius: 6px; margin: 8px 0; }
+    #dates { margin: 8px 0; font-size: 0.85rem; }
+
+    #khatmTable { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.85rem; }
+    #khatmTable th, #khatmTable td { border: 1px solid #ccc; padding: 6px; text-align: center; }
     #khatmTable th { background: #045d38; color: #fff; }
 
     .adhkar-section { margin-top: 12px; }
     .adhkar-section h3 { margin-bottom: 4px; color: #045d38; font-size: 1rem; }
     .adhkar-section ul { list-style: disc inside; font-size: 0.9rem; }
 
-    #duasSelect, #showDuaBtn {
-      margin: 8px 4px; padding: 6px 10px; font-size: 0.9rem;
-    }
+    #duasSelect, #showDuaBtn { margin: 8px 4px; padding: 6px 10px; font-size: 0.9rem; }
     #duaText { margin-top: 10px; font-size: 0.9rem; }
 
-    #compass {
-      width: 150px; height: 150px;
-      margin: 15px auto;
+    #compass { width: 150px; height: 150px; margin: 15px auto;
       background: url('https://cdn-icons-png.flaticon.com/512/54/54417.png') center/contain no-repeat;
-      transform-origin: center center;
-      display: none;
+      transform-origin: center center; display: none;
     }
-    #mobileOnly {
-      color: #d35400; margin-top: 8px; display: none;
-      font-size: 0.85rem;
-    }
-    #dates { margin: 8px 0; font-size: 0.85rem; }
+    #mobileOnly { color: #d35400; margin-top: 8px; display: none; font-size: 0.85rem; }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-108c-6230-902a-18f5e460c386/raw?se=2025-06-20T08%3A58%3A15Z&sp=r&sv=2024-08-04&sr=b&scid=57cb8cd5-3344-5d5c-80f5-7681420a1f21&skoid=1e6af1bf-6b08-4a04-8919-15773e7e7024&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-20T06%3A17%3A00Z&ske=2025-06-21T06%3A17%3A00Z&sks=b&skv=2024-08-04&sig=pOW38xtyfaIkOVcMlT54dfoClwBKYlB4zCE3VofRw%2Bw%3D" alt="لوجو" id="siteLogo">
+    <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-108c-6230-902a-18f5e460c386/raw" alt="لوجو الموقع" id="siteLogo">
     <h1>مواقيت الصلاة والإضافات الإسلامية</h1>
     <button id="menuBtn">⋮</button>
     <nav id="sideMenu">
@@ -149,6 +117,9 @@
       <a href="https://ehsan.sa" target="_blank">إحسان</a>
     </nav>
   </header>
+
+  <!-- Banner under header -->
+  <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-cc44-6230-8a55-47ada2f6810f/raw" alt="بانر الموقع" id="siteBanner">
 
   <!-- الصفحة الرئيسية -->
   <div id="home" class="box">
@@ -166,12 +137,13 @@
         <option value="Istanbul|Turkey">إسطنبول</option>
         <option value="London|United Kingdom">لندن</option>
         <option value="New York|USA">نيويورك</option>
+        <option value="Dubai|United Arab Emirates">الإمارات (دبي)</option>
         <option value="Jakarta|Indonesia">جاكرتا</option>
         <option value="Custom">مخصص...</option>
       </select>
       <input type="text" id="customCity" placeholder="المدينة" style="display:none;">
       <input type="text" id="customCountry" placeholder="الدولة" style="display:none;">
-      <button id="loadBtn">تحميل البيانات</button>
+      <button id="loadBtn">موافق</button>
     </div>
     <div id="timesBox" class="box">
       <h2>مواقيت الصلاة</h2>
@@ -190,34 +162,25 @@
   <!-- أذكار -->
   <div id="adhkar" class="box">
     <h2>أذكار الصباح والمساء والعامة</h2>
-    <div class="adhkar-section">
-      <h3>أذكار الصباح</h3>
-      <ul id="morningList"></ul>
-    </div>
-    <div class="adhkar-section">
-      <h3>أذكار المساء</h3>
-      <ul id="eveningList"></ul>
-    </div>
-    <div class="adhkar-section">
-      <h3>أذكار عامة</h3>
-      <ul id="generalList"></ul>
-    </div>
+    <div class="adhkar-section"><h3>أذكار الصباح</h3><ul id="morningList"></ul></div>
+    <div class="adhkar-section"><h3>أذكار المساء</h3><ul id="eveningList"></ul></div>
+    <div class="adhkar-section"><h3>أذكار عامة</h3><ul id="generalList"></ul></div>
   </div>
 
   <!-- أدعية -->
   <div id="duas" class="box">
     <h2>أدعية متنوعة</h2>
     <select id="duasSelect">
-      <option value="">اختر دعاء</option>
+      <option value="">— اختر دعاء —</option>
       <option value="rain">دعاء نزول المطر</option>
-      <option value="fast">دعاء الصائم</option>
+      <option value="fast">دعاء الإفطار للصائم</option>
       <option value="travel">دعاء السفر</option>
       <option value="istikharah">دعاء الاستخارة</option>
       <option value="morning">دعاء الصباح</option>
       <option value="evening">دعاء المساء</option>
     </select>
     <button id="showDuaBtn">عرض الدعاء</button>
-    <p id="duaText"></p>
+    <ul id="duaText" style="margin-top:10px; text-align:right; line-height:1.6;"></ul>
   </div>
 
   <!-- القبلة -->
@@ -237,143 +200,167 @@
   </div>
 
   <script>
-    // Menu toggle
+    // التنقل بين الأقسام
     const menuBtn = document.getElementById('menuBtn'),
           sideMenu = document.getElementById('sideMenu'),
           links    = sideMenu.querySelectorAll('a[data-page]'),
           boxes    = document.querySelectorAll('.box');
-    menuBtn.onclick = () => sideMenu.style.right = sideMenu.style.right==='0px' ? '-250px' : '0px';
-    links.forEach(link => link.onclick = e => {
+    menuBtn.onclick = () => sideMenu.style.right = sideMenu.style.right==='0px' ? '-250px':'0px';
+    links.forEach(link=>link.onclick=e=>{
       e.preventDefault();
-      const page = link.dataset.page;
-      boxes.forEach(b => b.id===page ? b.style.display='block' : b.style.display='none');
+      boxes.forEach(b=>b.id===link.dataset.page?b.style.display='block':b.style.display='none');
       sideMenu.style.right='-250px';
     });
     links[0].click();
 
-    // Dates
-    document.getElementById('gregorian').textContent = new Date().toLocaleDateString('ar-SA', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-    async function updateHijriHeader() {
+    // عرض التاريخين
+    document.getElementById('gregorian').textContent=
+      new Date().toLocaleDateString('ar-SA',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+    (async()=>{
       try {
-        const today = new Date().toISOString().split('T')[0];
-        const r = await fetch('https://api.aladhan.com/v1/gToH?date='+ today);
-        const j = await r.json();
-        document.getElementById('hijriDateHeader').textContent = j.data.hijri.weekday.ar + '، ' + j.data.hijri.day + ' ' + j.data.hijri.month.ar + ' ' + j.data.hijri.year;
+        const d=new Date().toISOString().split('T')[0],
+              res=await fetch('https://api.aladhan.com/v1/gToH?date='+d),
+              json=await res.json(),
+              h=json.data.hijri;
+        document.getElementById('hijriDateHeader').textContent=
+          h.weekday.ar+'، '+h.day+' '+h.month.ar+' '+h.year;
       } catch {}
-    }
-    updateHijriHeader();
+    })();
 
-    // Prayer times
-    const citySelect    = document.getElementById('citySelect'),
-          customCity    = document.getElementById('customCity'),
-          customCountry = document.getElementById('customCountry'),
-          loadBtn       = document.getElementById('loadBtn'),
-          timesEls      = { Fajr:0, Sunrise:0, Dhuhr:0, Asr:0, Maghrib:0, Isha:0 },
-          nextCountdown = document.getElementById('nextCountdown');
-    for (let k in timesEls) timesEls[k] = document.getElementById(k);
-    citySelect.onchange = () => {
-      const c = citySelect.value==='Custom';
-      customCity.style.display    = c?'inline-block':'none';
-      customCountry.style.display = c?'inline-block':'none';
+    // مواقيت الصلاة والعد التنازلي
+    const citySelect    =document.getElementById('citySelect'),
+          customCity    =document.getElementById('customCity'),
+          customCountry =document.getElementById('customCountry'),
+          loadBtn       =document.getElementById('loadBtn'),
+          timesEls      ={Fajr:0,Sunrise:0,Dhuhr:0,Asr:0,Maghrib:0,Isha:0},
+          nextCountdown =document.getElementById('nextCountdown');
+    let currentTimings=null, currentTimeZone='', currentLocale='';
+
+    for(let k in timesEls) timesEls[k]=document.getElementById(k);
+
+    citySelect.onchange=()=>{
+      const c=citySelect.value==='Custom';
+      customCity.style.display=c?'inline-block':'none';
+      customCountry.style.display=c?'inline-block':'none';
     };
-    async function fetchTimings(city,country){
-      if (city.toLowerCase()==='mecca') city='Makkah';
-      if (city.toLowerCase()==='medina') city='Madinah';
-      const url = `https://api.aladhan.com/v1/timingsByCity?city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}&method=2`;
-      const r   = await fetch(url);
-      if (!r.ok) throw new Error(r.statusText);
-      const j = await r.json();
-      if (!j.data || !j.data.timings) throw new Error('No timings');
-      return j.data.timings;
+
+    function getNowInTimeZone(tz){
+      const now=new Date();
+      const parts=new Intl.DateTimeFormat('en-US',{
+        timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit',
+        hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false
+      }).formatToParts(now).reduce((a,p)=>{ if(p.type!=='literal') a[p.type]=p.value; return a; },{});
+      return new Date(`${parts.year}-${parts.month}-${parts.day}T${parts.hour}:${parts.minute}:${parts.second}`);
     }
-    loadBtn.onclick = async () => {
+
+    async function fetchTimings(city,country){
+      if(city.toLowerCase()==='mecca') city='Makkah';
+      if(city.toLowerCase()==='medina') city='Madinah';
+      const url=`https://api.aladhan.com/v1/timingsByCity?city=${encodeURIComponent(city)}&country=${encodeURIComponent(country)}&method=2`;
+      const res=await fetch(url);
+      if(!res.ok) throw new Error(res.statusText);
+      const json=await res.json();
+      if(!json.data||!json.data.timings) throw new Error('No timings');
+      return {timings:json.data.timings,timezone:json.data.meta.timezone};
+    }
+
+    loadBtn.onclick=async()=>{
       let city,country;
-      if (citySelect.value==='Custom') {
-        city    = customCity.value.trim();
-        country = customCountry.value.trim();
-        if (!city||!country) return alert('أدخل المدينة والدولة');
-      } else [city,country] = citySelect.value.split('|');
-      try {
+      if(citySelect.value==='Custom'){
+        city=customCity.value.trim(); country=customCountry.value.trim();
+        if(!city||!country) return alert('أدخل المدينة والدولة');
+      } else [city,country]=citySelect.value.split('|');
+      currentLocale=(country.trim()==='USA')?'en-US':'ar-SA';
+      try{
         document.getElementById('timesBox').style.display='block';
-        for (let k in timesEls) timesEls[k].textContent='...';
-        const t = await fetchTimings(city,country);
-        for (let k in timesEls) timesEls[k].textContent = t[k];
-        startCountdown(t);
-      } catch(err) {
-        alert('خطأ في جلب البيانات: '+err.message);
+        for(let k in timesEls) timesEls[k].textContent='...';
+        const data=await fetchTimings(city,country);
+        currentTimings=data.timings;
+        currentTimeZone=data.timezone;
+        for(let k in timesEls){
+          const [h,m]=currentTimings[k].split(':').map(Number);
+          let disp;
+          if(currentLocale==='ar-SA'){
+            let H=h%12; if(H===0) H=12;
+            disp=`${H}:${m.toString().padStart(2,'0')}`;
+          } else {
+            disp=`${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}`;
+          }
+          timesEls[k].textContent=disp;
+        }
+        startCountdown();
+      }catch(e){
+        alert('خطأ في جلب البيانات: '+e.message);
       }
     };
-    function startCountdown(t){
+
+    function startCountdown(){
       (function cycle(){
-        const now=new Date(),today=now.toISOString().split('T')[0];
-        let nxt,nm='';
-        if(now.getDay()===5){
-          nm='الجمعة'; nxt=new Date(today+'T12:00:00');
-          if(nxt<=now) nxt.setDate(nxt.getDate()+7);
-        } else {
-          ['Fajr','Dhuhr','Asr','Maghrib','Isha'].some(n=>{
-            const [h,m]=t[n].split(':').map(Number),
-                  dt=new Date(`${today}T${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:00`);
-            if(dt>now){nxt=dt;nm=n;return true;}
-            return false;
-          });
-          if(!nxt){
-            const tm=new Date(now); tm.setDate(tm.getDate()+1);
-            const d=tm.toISOString().split('T')[0], [h2,m2]=t.Fajr.split(':').map(Number);
-            nxt=new Date(`${d}T${String(h2).padStart(2,'0')}:${String(m2).padStart(2,'0')}:00`);
-            nm='الفجر';
-          }
-        }
-        const diff=nxt-now, hrs=Math.floor(diff/3600000),
-              mins=Math.floor((diff%3600000)/60000),
-              secs=Math.floor((diff%60000)/1000);
-        nextCountdown.textContent=`الوقت المتبقي لـ ${nm}: ${hrs}س ${mins}د ${secs}ث`;
+        const now=getNowInTimeZone(currentTimeZone);
+        const dow=now.getDay();
+        const until=(5-dow+7)%7||7;
+        const target=new Date(now);
+        target.setDate(now.getDate()+until);
+        target.setHours(12,0,0,0);
+        const diff=target-now;
+        const days=Math.floor(diff/86400000);
+        const hrs=Math.floor((diff%86400000)/3600000);
+        const mins=Math.floor((diff%3600000)/60000);
+        const secs=Math.floor((diff%60000)/1000);
+        nextCountdown.textContent=
+          `الوقت المتبقي لـ الجمعة: ${days>0?days+'ي ':''}${hrs}س ${mins}د ${secs}ث`;
         setTimeout(cycle,1000);
       })();
     }
 
-    // Adhkar
+    // الأذكار
     const morning=['أصبحنا وأصبح الملك لله','رضيت بالله ربا','اللهم بك أصبحنا'],
           evening=['أمسينا وأمسى الملك لله','رضيت بالله ربا','اللهم بك أمسينا'],
           general=['سبحان الله','الحمد لله','لا إله إلا الله','الله أكبر'];
-    function fill(id,arr){const ul=document.getElementById(id);ul.innerHTML='';arr.forEach(i=>{let li=document.createElement('li');li.textContent=i;ul.append(li);});}
-    fill('morningList',morning); fill('eveningList',evening); fill('generalList',general);
+    ['morningList','eveningList','generalList'].forEach((id,i)=>{
+      const arr=i===0?morning:i===1?evening:general, ul=document.getElementById(id);
+      arr.forEach(txt=>{ const li=document.createElement('li'); li.textContent=txt; ul.append(li); });
+    });
 
-    // Duas
-    const duaList={
-      rain:'اللهم صيبًا نافعًا',
-      fast:'اللهم إني لك صمت وبك آمنت وعليك توكلت وعلى رزقك أفطرت',
-      travel:'سبحان الذي سخر لنا هذا وما كنا له مقرنين وإنا إلى ربنا لمنقلبون',
-      istikharah:'اللهم إني أستخيرك بعلمك واستقدرك بقدرتك واسألك من فضلك العظيم',
-      morning:'اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك المصير',
-      evening:'اللهم بك أمسينا وبك أصبحنا وبك نحيا وبك نموت وإليك المصير'
-    };
-    document.getElementById('showDuaBtn').onclick = ()=>{
-      const key=document.getElementById('duasSelect').value;
-      document.getElementById('duaText').textContent = duaList[key]||'اختر دعاء';
+    // الأدعية
+    const duaList={rain:['اللهم صيبًا نافعًا','اللهم اسقنا الغيث ولا تجعلنا من القانطين'],
+                   fast:['اللهم إني لك صمت وبك آمنت وعليك توكلت وعلى رزقك أفطرت'],
+                   travel:['سبحان الذي سخر لنا هذا وما كنا له مقرنين وإنا إلى ربنا لمنقلبون'],
+                   istikharah:['اللهم إني أستخيرك بعلمك واستقدرك بقدرتك واسألك من فضلك العظيم'],
+                   morning:['اللهم بك أصبحنا وبك أمسينا وبك نحيا وبك نموت وإليك المصير'],
+                   evening:['اللهم بك أمسينا وبك أصبحنا وبك نحيا وبك نموت وإليك المصير']};
+    const selectDua=document.getElementById('duasSelect'),
+          btnDua=document.getElementById('showDuaBtn'),
+          outDua=document.getElementById('duaText');
+    btnDua.onclick=()=>{
+      outDua.innerHTML='';
+      (duaList[selectDua.value]||[]).forEach(txt=>{
+        const li=document.createElement('li');
+        li.textContent=txt;
+        outDua.append(li);
+      });
     };
 
-    // Khatm table
-    const tb=document.querySelector('#khatmTable tbody');
+    // ختم القرآن
+    const tbody=document.querySelector('#khatmTable tbody');
     for(let i=1;i<=30;i++){
-      let tr=document.createElement('tr'),
-          d1=document.createElement('td'),
-          d2=document.createElement('td'),
-          s=(i-1)*20+1,e=i*20;
-      d1.textContent=`اليوم ${i}`;
-      d2.textContent=`${s}–${e}`;
-      tr.append(d1,d2);
-      tb.append(tr);
+      const tr=document.createElement('tr'),
+            td1=document.createElement('td'),
+            td2=document.createElement('td'),
+            start=(i-1)*20+1,end=i*20;
+      td1.textContent=`اليوم ${i}`;
+      td2.textContent=`${start}–${end}`;
+      tr.append(td1,td2);
+      tbody.append(tr);
     }
 
-    // Compass
+    // القبلة
     const compass=document.getElementById('compass'),
           mobileOnly=document.getElementById('mobileOnly');
     if('DeviceOrientationEvent' in window){
       compass.style.display='block';
-      window.addEventListener('deviceorientation', e=>{
-        const alpha=e.alpha||0;
-        compass.style.transform=`rotate(${-alpha}deg)`;
+      window.addEventListener('deviceorientation',e=>{
+        compass.style.transform=`rotate(${- (e.alpha||0)}deg)`;
       });
     } else {
       mobileOnly.style.display='block';
