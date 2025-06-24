@@ -12,9 +12,9 @@
   <meta property="og:url" content="https://sa0hm0.github.io/s/">
   <meta property="og:title" content="مواقيت الصلاة والإضافات الإسلامية">
   <meta property="og:description" content="عرض مواقيت الصلاة، الأذكار، الأدعية، واتجاه القبلة، مع التاريخ الميلادي والهجري.">
-  <meta property="og:image" content="https://media.discordapp.net/attachments/1316731095391277066/1385612672816513116/raw.png">
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1316731095391277066/1385612672816513116/raw.png?ex=685b511c&is=6859ff9c&hm=418e77e65409a21ecf64af04fb62fb1d130e446c3f0960ba52a772f0f5a79a26&=&format=webp&quality=lossless&width=1104&height=737">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="https://media.discordapp.net/attachments/1316731095391277066/1385612672816513116/raw.png">
+  <link rel="icon" href="https://media.discordapp.net/attachments/1316731095391277066/1385612672816513116/raw.png?ex=685b511c&is=6859ff9c&hm=418e77e65409a21ecf64af04fb62fb1d130e446c3f0960ba52a772f0f5a79a26&=&format=webp&quality=lossless&width=1104&height=737">
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,7 +27,7 @@
     }
     header {
       position: relative;
-      background: #0a3d24 url("https://media.discordapp.net/attachments/1316731095391277066/1385612664574574732/raw.png") center/cover no-repeat;
+      background: #0a3d24 url("https://media.discordapp.net/attachments/1316731095391277066/1385612664574574732/raw.png?ex=685b511a&is=6859ff9a&hm=830707bd348c2c616880317b101ded1887583ccd6d00c40da7ca813abb2088dc&=&format=webp&quality=lossless&width=1104&height=737") center/cover no-repeat;
       color: #fff;
       padding: 60px 20px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -93,12 +93,15 @@
     @media (max-width: 600px) {
       .box { width: 95%; margin: 15px auto; }
     }
+    
+    /* Countdown styles */
+    .countdown-item { margin: 10px 0; font-size: 1rem; }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://media.discordapp.net/attachments/1316731095391277066/1385612672816513116/raw.png" alt="لوجو الموقع" id="siteLogo">
+    <img src="https://media.discordapp.net/attachments/1316731095391277066/1385612664574574732/raw.png?ex=685b511a&is=6859ff9a&hm=830707bd348c2c616880317b101ded1887583ccd6d00c40da7ca813abb2088dc&=&format=webp&quality=lossless&width=1104&height=737" alt="لوجو الموقع" id="siteLogo">
     <h1>مواقيت الصلاة والإضافات الإسلامية</h1>
     <button id="menuBtn">⋮</button>
     <nav id="sideMenu">
@@ -106,16 +109,17 @@
       <a href="#" data-page="adhkar">أذكار</a>
       <a href="#" data-page="duas">أدعية</a>
       <a href="#" data-page="qibla">القبلة</a>
+      <a href="#" data-page="countdowns">مؤاقت</a>
       <a href="#" data-page="khatm">ختم القرآن</a>
       <a href="https://ehsan.sa" target="_blank">إحسان</a>
     </nav>
   </header>
 
-  <img src="https://media.discordapp.net/attachments/1316731095391277066/1385612664574574732/raw.png" alt="بانر الموقع" id="siteBanner">
+  <img src="https://media.discordapp.net/attachments/1316731095391277066/1385612664574574732/raw.png?ex=685b511a&is=6859ff9a&hm=830707bd348c2c616880317b101ded1887583ccd6d00c40da7ca813abb2088dc&=&format=webp&quality=lossless&width=1104&height=737" alt="بانر الموقع" id="siteBanner">
 
   <!-- الصفحة الرئيسية -->
   <div id="home" class="box">
-    <img class="decor-img" src="https://media.discordapp.net/attachments/1316731095391277066/1385612672816513116/raw.png" alt="مسجد">
+    <img class="decor-img" src="https://media.discordapp.net/attachments/1316731095391277066/1385612664574574732/raw.png?ex=685b511a&is=6859ff9a&hm=830707bd348c2c616880317b101ded1887583ccd6d00c40da7ca813abb2088dc&=&format=webp&quality=lossless&width=1104&height=737" alt="مسجد">
     <h2>الصفحة الرئيسية</h2>
     <div id="dates">
       <span id="gregorian"></span> |
@@ -182,6 +186,14 @@
     <p id="mobileOnly">هذه الميزة تعمل على الأجهزة المحمولة فقط.</p>
   </div>
 
+  <!-- مؤاقت -->
+  <div id="countdowns" class="box">
+    <h2>المؤاقت القادمة</h2>
+    <div class="countdown-item"><strong>باقي على رمضان:</strong> <span id="toRamadan"></span></div>
+    <div class="countdown-item"><strong>باقي على عيد الفطر:</strong> <span id="toEidFitr"></span></div>
+    <div class="countdown-item"><strong>باقي على عيد الأضحى:</strong> <span id="toEidAdha"></span></div>
+  </div>
+
   <!-- ختم القرآن -->
   <div id="khatm" class="box">
     <h2>جدول ختم القرآن خلال شهر</h2>
@@ -219,7 +231,7 @@
       } catch {}
     })();
 
-    // إعداد العناصر
+    // إعداد الصلاة
     const citySelect    = document.getElementById('citySelect'),
           customCity    = document.getElementById('customCity'),
           customCountry = document.getElementById('customCountry'),
@@ -289,7 +301,6 @@
       }
     });
 
-    // تحديث تلقائي عند فتح الصفحة
     window.addEventListener('load', ()=>{ loadBtn.click(); });
 
     function startCountdown(){
@@ -311,28 +322,20 @@
       })();
     }
 
-    // ملء ختم القرآن
-    const tbodyKhatm = document.querySelector('#khatmTable tbody');
-    for(let i=1;i<=30;i++){
-      const tr = document.createElement('tr');
-      const td1 = document.createElement('td'), td2 = document.createElement('td');
-      td1.textContent = `اليوم ${i}`;
-      td2.textContent = `${(i-1)*20+1}–${i*20}`;
-      tr.append(td1,td2);
-      tbodyKhatm.append(tr);
-    }
-
-    // الأذكار
+    // أذكار
     const morning=['أصبحنا وأصبح الملك لله','رضيت بالله ربا','اللهم بك أصبحنا'],
           evening=['أمسينا وأمسى الملك لله','رضيت بالله ربا','اللهم بك أمسينا'],
           general=['سبحان الله','الحمد لله','لا إله إلا الله','الله أكبر'];
     ['morningList','eveningList','generalList'].forEach((id,i)=>{
       const arr = i===0?morning:i===1?evening:general;
       const ul = document.getElementById(id);
-      arr.forEach(txt=>{ const li=document.createElement('li'); li.textContent=txt; ul.append(li); });
+      arr.forEach(txt=>{
+        const li=document.createElement('li');
+        li.textContent=txt; ul.append(li);
+      });
     });
 
-    // الأدعية
+    // أدعية
     const duaList = {
       rain:['اللهم صيبًا نافعًا','اللهم اسقنا الغيث ولا تجعلنا من القانطين'],
       fast:['اللهم إني لك صمت وبك آمنت وعليك توكلت وعلى رزقك أفطرت'],
@@ -346,8 +349,7 @@
       ul.innerHTML='';
       (duaList[document.getElementById('duasSelect').value]||[]).forEach(txt=>{
         const li = document.createElement('li');
-        li.textContent = txt;
-        ul.append(li);
+        li.textContent = txt; ul.append(li);
       });
     });
 
@@ -360,6 +362,47 @@
     } else {
       document.getElementById('mobileOnly').style.display='block';
     }
+
+    // ختم القرآن
+    const tbodyKhatm = document.querySelector('#khatmTable tbody');
+    for(let i=1;i<=30;i++){
+      const tr = document.createElement('tr'),
+            td1 = document.createElement('td'),
+            td2 = document.createElement('td');
+      td1.textContent = `اليوم ${i}`;
+      td2.textContent = `${(i-1)*20+1}–${i*20}`;
+      tr.append(td1,td2);
+      tbodyKhatm.append(tr);
+    }
+
+    // مؤاقت (Countdowns)
+    const toRamadan   = document.getElementById('toRamadan'),
+          toEidFitr   = document.getElementById('toEidFitr'),
+          toEidAdha   = document.getElementById('toEidAdha');
+    // التواريخ الثابتة القادمة (يمكن تعديلها حسب التقويم الفعلي)
+    const dtRamadan = new Date('2026-02-10T00:00:00'),
+          dtEidFitr = new Date(dtRamadan.getTime() + 29*24*60*60*1000),
+          dtEidAdha = new Date('2026-06-16T00:00:00');
+    function updateCountdowns(){
+      const now = new Date();
+      [ ['Ramadan', dtRamadan, toRamadan],
+        ['EidFitr', dtEidFitr, toEidFitr],
+        ['EidAdha', dtEidAdha, toEidAdha] ]
+      .forEach(([_, target, el])=>{
+        let diff = target - now;
+        if(diff < 0) { el.textContent = 'انتهى'; return; }
+        const daysTotal = Math.floor(diff/86400000);
+        const months = Math.floor(daysTotal/30);
+        const days   = daysTotal % 30;
+        diff %= 86400000;
+        const hrs  = Math.floor(diff/3600000);
+        const mins = Math.floor((diff%3600000)/60000);
+        const secs = Math.floor((diff%60000)/1000);
+        el.textContent = `${months}ش ${days}ي ${hrs}س ${mins}د ${secs}ث`;
+      });
+    }
+    setInterval(updateCountdowns, 1000);
+    updateCountdowns();
   </script>
 </body>
 </html>
